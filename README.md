@@ -18,8 +18,16 @@ Some highlights:
 * 2,323 endpoints failed during the discovery process.
 * 192 endpoints have certificates signed by an unknown authority ("x509: certificate signed by unknown authority")
 * 153 endpoints have certificates have expired ("x509: certificate has expired or is not yet valid")
-* 890 endpoints have certificates that are not valid for the domain ("x509: certificate is valid for A... not B")
-* 16 endpoints have certificates that just don't make any sense ("x509: certificate is not valid for any names, but wanted to match ...")
+* 890 endpoints have certificates that are not valid for the domain ("x509: certificate is valid for [DOMAINS...] not [DOMAIN]")
+* 16 endpoints have certificates that just don't make any sense ("x509: certificate is not valid for any names, but wanted to match [DOMAIN]")
+* 1018 endpoints are for invalid hosts ("dial tcp: lookup [HOST]: no such host")
+* 359 endpoints had connections ("read tcp [ROUTE]: read: connection reset by peer")
+* 516 endpoints timed out after 15 seconds ("dial tcp [IP]:443: i/o timeout")
+* 228 endpoints refused connections ("dial tcp [IP]:443: connect: connection refused")
+* 32 certificiates are being used for 1,075 endpoints. One of them (the arkansas.gov group) is used by 92.
+* 7 endpoints have certificates that expired between 27 DEC 2018 and 26 JAN 2019 (2019 US government shutdown).
+* 5,626 endpoints have certificates that expire in 2019.
+* 2,636 endpoints have certificates that expire after 1 JAN 2020.
 
 # Copyright information
 
