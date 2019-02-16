@@ -11,6 +11,16 @@ There are two sets of data:
 
 The `current-full.csv` file originates from the [GSA/data](https://github.com/GSA/data) dotgov-domains dataset.
 
+Starting with a list of 5,797 domains, we did disocvery which lead to a total 10,764 endpoints. Discovery was based on services on port 443 and no other ports were scanned.
+
+Some highlights:
+
+* 2,323 endpoints failed during the discovery process.
+* 192 endpoints have certificates signed by an unknown authority ("x509: certificate signed by unknown authority")
+* 153 endpoints have certificates have expired ("x509: certificate has expired or is not yet valid")
+* 890 endpoints have certificates that are not valid for the domain ("x509: certificate is valid for A... not B")
+* 16 endpoints have certificates that just don't make any sense ("x509: certificate is not valid for any names, but wanted to match ...")
+
 # Copyright information
 
 Open under the MIT License.
