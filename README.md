@@ -1,6 +1,6 @@
 # SSL Hound Data
 
-A home for miscellaneous data published by the [SSL Hound](https://www.sslhound.com/). If you use any of this data for something, please do let us know by opening an issue and telling us about it!
+A home for miscellaneous data published by [SSL Hound](https://www.sslhound.com/). If you use any of this data for something, please do let us know by opening an issue and telling us about it!
 
 # dotgov-domains
 
